@@ -33,8 +33,8 @@ public class Main {
 
         // Task 5
         System.out.println("\nTask 5:");
-        int[] t5Array = {8, 3, 2, 7, 8, 3, 2, 7};
-        System.out.println(Arrays.toString(ArraySorter.sortIntArraySmallestToLargest(t5Array)));
+        int[] t5Array = {8, 3, 2, 7};
+        System.out.println(Arrays.toString(ArraySorter.sortSmallestToLargest(t5Array)));
     }
 
 }
