@@ -1,6 +1,8 @@
 package org.example;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
@@ -57,15 +59,27 @@ public class Main {
         int t7n = 4;
         System.out.println(FibonacciCalculator.getNthInteger(t7n));
 
+
         // Task 8 - Get prime numbers between n and n/2.
         System.out.println("\nTask 8:");
         int t8n = 10;
         System.out.println(PrimeNumberCalculator.getPrimesBetweenNAndHalfN(t8n));
 
+
         // Task 9 - Convert seconds to HH:MM:SS.
-        System.out.println("\nTask 8:");
+        System.out.println("\nTask 9:");
         int t9n = 3661;
         System.out.println(TimeFormatter.secondsToHHMMSS(t9n));
+
+
+        // Task 10 - Generate numbers between -50 and 50, and add them to a HashMap.
+        System.out.println("\nTask 10:");
+        HashMap<String, ArrayList<Integer>> t10map =
+                RandomNumberGenerator.generateNumbersBetweenXY(-50, 50, 100);
+        t10map.forEach((key, value) -> {
+            System.out.println(key + ": " + value);
+        });
+
     }
 
 }
